@@ -1,0 +1,24 @@
+{
+  "name": "responsivebot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donthedeveloper/responsivebot.git"
+  },
+  "author": "Don Hansen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donthedeveloper/responsivebot/issues"
+  },
+  "homepage": "https://github.com/donthedeveloper/responsivebot#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "tmi.js": "^1.2.1"
+  }
+}
