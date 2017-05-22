@@ -1,18 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import {HashRouter, Route} from 'react-router';
+import {Router, Route} from 'react-router';
+import {BrowserRouter} from 'react-router-dom';
 import {Provider} from 'react-redux';
 import {axios} from 'axios';
 import store from './store.jsx';
 
-import ChatContainer from './chat/index.jsx';
+import ChatContainer from './chat/components/ChatContainer.jsx';
 
 ReactDOM.render(
     <Provider store={store}>
-        <HashRouter>
+        <BrowserRouter>
             <Route path='/' component={ChatContainer} />
-        </HashRouter>
+        </BrowserRouter>
     </Provider>,
     document.getElementById('app')
 );
