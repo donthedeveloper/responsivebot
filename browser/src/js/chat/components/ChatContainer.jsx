@@ -1,16 +1,18 @@
 import React from 'react';
-import io from 'socket.io-client';
+import {connect} from 'react-redux';
 
 const ChatContainer = (props) => {
-    var socket = io(window.location.origin);
-
-    socket.on('connect', function () {
-        console.log('I have made a persistent two-way connection to the server!');
-    });
-
     return (
-        <div>hello</div>
+        <div>
+            {props.messages.map((message) => {
+                return <p key={message.id}>{message.message}</p>;
+            })}
+        </div>
     );
 };
 
-export default ChatContainer;
+const mapStateToProps = (state) => ({
+    messages: state.messages
+});
+
+export default connect(mapStateToProps)(ChatContainer);

@@ -10,7 +10,7 @@ const store = createStore(
   composeWithDevTools(
     applyMiddleware(
       ReduxThunk,
-      createLogger({ collapsed: true })
+      // createLogger({ collapsed: true })
     )
   )
 );
