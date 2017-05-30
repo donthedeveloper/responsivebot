@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 
 const ChatContainer = (props) => {
     return (
-        <div>
+        <div className='chat'>
             {props.messages.map((message) => {
                 return <p key={message.id}>{message.message}</p>;
             })}

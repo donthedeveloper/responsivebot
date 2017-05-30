@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #29303a;
+}
+
+.chat {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.chat p {
+    background-color: #6441A4;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+}

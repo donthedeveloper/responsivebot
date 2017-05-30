@@ -46,7 +46,7 @@ const tmi = require("tmi.js");
 
 const options = {
     options: {
-        debug: false
+        debug: true
     },
     connection: {
         reconnect: true
@@ -55,7 +55,7 @@ const options = {
         username: "ResponsiveBot",
         password: process.env.OAUTH
     },
-    channels: ["#a_seagull"]
+    channels: ["#itsHafu"]
 };
 
 const client = new tmi.client(options);
